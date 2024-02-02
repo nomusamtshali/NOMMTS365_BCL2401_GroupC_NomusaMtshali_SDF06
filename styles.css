@@ -1,0 +1,208 @@
+ /* Set base font size for better responsiveness */
+:root {
+    font-size: 10px;
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+    margin: 300px; /* Consider removing or adjusting these margins */
+    margin-top: 0px;
+}
+
+/* Styling for images */
+img {
+    display: block;
+    width: 170px;
+    height: 170px;
+}
+
+/* Rounded profile image */
+.img1 {
+    border-radius: 300px;
+}
+
+/* Profile image styling */
+.profile-image {
+    background-color: grey;
+    width: 175px;
+    border-radius: 400px;
+}
+
+/* Profile username styling */
+.profile-user-name1 {
+    font-size: 30px;
+}
+
+/* Secondary profile username styling */
+.profile-user-name2 {
+    font-size: 20px;
+}
+
+/* Flexbox styling for profile section */
+.p1 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Flexbox styling for profile statistics */
+.ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for profile statistics items */
+.li {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 65px;
+}
+
+/* Styling for profile edit button */
+.profile-edit-btn {
+    width: 200px;
+    height: 40px;
+    margin: 7px;
+    color: black;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+/* Hover effect for profile edit button */
+.profile-edit-btn:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* Styling for share profile button */
+.share-profile-btn {
+    width: 200px;
+    height: 40px;
+    margin: 7px;
+    color: black;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+/* Hover effect for share profile button */
+.share-profile-btn:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* Styling for profile settings button */
+.profile-settings-btn {
+    margin: 7px;
+    color: black;
+    font-weight: bold;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+/* Styling for profile bio */
+.profile-bio {
+    font-size: 15px;
+}
+
+/* Styling for gallery section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    grid-template-rows: 210px;
+    margin-top: 50px;
+    grid-gap: 16px;
+}
+
+/* Styling for gallery item likes */
+.gallery-item-likes {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Styling for gallery item comments */
+.gallery-item-comments {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Styling for gallery item container */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styling for gallery item image */
+.gallery-item > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: center;
+}
+
+/* Hover effect for gallery image */
+.gallery-image:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* Styling for gallery item information */
+.gallery-item-info {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    inset: 0;
+}
+
+/* Blur effect on gallery item image hover */
+.gallery-item:hover > img {
+    filter: blur(2px);
+}
+
+/* Styling for gallery item info visibility */
+.gallery-item > .gallery-item-info {
+    opacity: 0;
+}
+
+/* Hover effect for gallery item info */
+.gallery-item:hover > .gallery-item-info {
+    opacity: 1;
+}
+
+/* Loader styling for additional content */
+.loader {
+    margin: 20px;
+    border: 5px solid rgb(86, 81, 81);
+    border-top: 5px solid silver;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: wheel 2s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Keyframe animation for loader */
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
